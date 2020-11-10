@@ -109,7 +109,7 @@ ax[1,0].imshow(color.label2rgb(segmented_cells, bg_label=0))
 ax[1,0].set_title('Watershed Segmentation (Euclidian Distance)')
 ax[1,0].axis('off')
 ax[1,1].imshow(image_label_overlay)
-ax[1,1].set_title('Overlay')
+ax[1,1].set_title('Overlay: (' + str(segmented_cells.max()) + " dead cells counted)")
 ax[1,1].axis('off')
 plt.show()
 
